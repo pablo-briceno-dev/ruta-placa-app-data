@@ -1,5 +1,5 @@
 {
-  "version": "2025-04-08",
+  "version": "2026-04-08",
   "cities": [
     {
       "id": "bogota",
@@ -8,6 +8,7 @@
       "restrictions": [
         {
           "vehicleType": "particular",
+          "scheduleType": "fixed_weekly",
           "schedule": {
             "1": [9, 0],
             "2": [1, 2],
@@ -18,114 +19,62 @@
           "morningStart": "06:00",
           "morningEnd":   "20:00",
           "note": null
-        },
-        {
-          "vehicleType": "taxi",
-          "schedule": {
-            "1": [9, 0],
-            "2": [1, 2],
-            "3": [3, 4],
-            "4": [5, 6],
-            "5": [7, 8]
-          },
-          "morningStart": "05:30",
-          "morningEnd":   "21:00",
-          "note": "Aplica en toda la malla vial"
-        },
-        {
-          "vehicleType": "moto",
-          "schedule": {},
-          "morningStart": "00:00",
-          "morningEnd":   "00:00",
-          "note": "Sin restricción actualmente"
         }
       ]
     },
     {
-      "id": "medellin",
-      "name": "Medellín",
-      "emoji": "🌸",
+      "id": "pasto",
+      "name": "Pasto",
+      "emoji": "🌋",
       "restrictions": [
         {
           "vehicleType": "particular",
-          "schedule": {
-            "1": [1, 2],
-            "2": [3, 4],
-            "3": [5, 6],
-            "4": [7, 8],
-            "5": [9, 0]
+          "scheduleType": "rotating_weekly",
+          "rotation": {
+            "cycleStartDate": "2026-01-05",
+            "cycleLengthWeeks": 5,
+            "weekdaysApply": [1, 3],
+            "rotationCycle": [
+              [1, 2],
+              [3, 4],
+              [5, 6],
+              [7, 8],
+              [9, 0]
+            ]
           },
-          "morningStart":    "07:00",
-          "morningEnd":      "09:00",
-          "afternoonStart":  "17:00",
-          "afternoonEnd":    "19:00",
-          "note": null
-        },
-        {
-          "vehicleType": "taxi",
-          "schedule": {},
-          "morningStart": "00:00",
-          "morningEnd":   "00:00",
-          "note": "Sin restricción"
-        },
-        {
-          "vehicleType": "moto",
-          "schedule": {},
-          "morningStart": "00:00",
-          "morningEnd":   "00:00",
-          "note": "Sin restricción"
-        }
-      ]
-    },
-    {
-      "id": "cali",
-      "name": "Cali",
-      "emoji": "🌺",
-      "restrictions": [
-        {
-          "vehicleType": "particular",
-          "schedule": {
-            "1": [3, 4],
-            "2": [5, 6],
-            "3": [7, 8],
-            "4": [9, 0],
-            "5": [1, 2]
-          },
-          "morningStart":   "07:00",
-          "morningEnd":     "09:00",
-          "afternoonStart": "17:30",
-          "afternoonEnd":   "19:30",
-          "note": null
-        },
-        {
-          "vehicleType": "taxi",
-          "schedule": {
-            "1": [5, 6],
-            "2": [7, 8],
-            "3": [9, 0],
-            "4": [1, 2],
-            "5": [3, 4]
-          },
-          "morningStart":   "06:00",
-          "morningEnd":     "09:00",
-          "afternoonStart": "15:00",
-          "afternoonEnd":   "21:00",
-          "note": "Dígitos distintos a los particulares"
-        },
-        {
-          "vehicleType": "moto",
-          "schedule": {
-            "1": [1, 2],
-            "2": [3, 4],
-            "3": [5, 6],
-            "4": [7, 8],
-            "5": [9, 0]
-          },
-          "morningStart":   "07:00",
-          "morningEnd":     "09:00",
+          "morningStart": "07:00",
+          "morningEnd":   "09:00",
           "afternoonStart": "17:00",
           "afternoonEnd":   "19:00",
-          "note": "Aplica en vías principales"
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "manizales",
+      "name": "Manizales",
+      "emoji": "☕",
+      "restrictions": [
+        {
+          "vehicleType": "particular",
+          "scheduleType": "rotating_daily",
+          "rotation": {
+            "cycleStartDate": "2026-01-05",
+            "cycleLengthDays": 5,
+            "weekdaysApply": [1, 2, 3, 4, 5],
+            "rotationCycle": [
+              [1, 2],
+              [3, 4],
+              [5, 6],
+              [7, 8],
+              [9, 0]
+            ]
+          },
+          "morningStart": "07:00",
+          "morningEnd":   "09:00",
+          "afternoonStart": "17:00",
+          "afternoonEnd":   "19:00",
+          "note": null
         }
       ]
     }
