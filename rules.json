@@ -32,7 +32,7 @@
           "scheduleType": "rotating_weekly",
           "rotation": {
             "cycleStartDate": "2026-04-06",
-            "cycleLengthWeeks": 5,
+            "cycleLengthWeeks": 4,
             "weekdaysApply": [0, 1],
             "rotationCycle": [
               [0, 1],
