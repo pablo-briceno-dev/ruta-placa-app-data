@@ -37,10 +37,8 @@
               [0, 1], [2, 3], [4, 5], [6, 7], [8, 9]
             ]
           },
-          "morningStart": "07:00",
-          "morningEnd": "09:00",
-          "afternoonStart": "17:00",
-          "afternoonEnd":   "19:00",
+          "morningStart": "07:30",
+          "morningEnd": "19:00",
           "note": null
         }
       ]
