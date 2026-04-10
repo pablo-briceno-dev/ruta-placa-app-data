@@ -1,6 +1,6 @@
 {
-  "version": "0.0.1",
-  "lastUpdated": "2026-04-09T08:32:00Z",
+  "version": "0.0.2",
+  "lastUpdated": "2026-04-10T09:50:00Z",
   "cities": [
     {
       "id": "bogota",
@@ -9,16 +9,17 @@
       "restrictions": [
         {
           "vehicleType": "particular",
-          "scheduleType": "fixed_weekly",
-          "schedule": {
-            "1": [9, 0],
-            "2": [1, 2],
-            "3": [3, 4],
-            "4": [5, 6],
-            "5": [7, 8]
+          "scheduleType": "rotating_alternating",
+          "rotation": {
+            "cycleStartDate": "2026-04-08",
+            "weekdaysApply": [1, 2, 3, 4, 5],
+            "rotationCycle": [
+              [1, 2, 3, 4, 5],
+              [6, 7, 8, 9, 0]
+            ]
           },
           "morningStart": "06:00",
-          "morningEnd":   "20:00",
+          "morningEnd": "20:00",
           "note": null
         }
       ]
