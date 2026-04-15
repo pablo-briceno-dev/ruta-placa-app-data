@@ -10,6 +10,7 @@
         {
           "vehicleType": "particular",
           "scheduleType": "rotating_alternating",
+          "holidayBehavior": "custom_bogota",
           "rotation": {
             "cycleStartDate": "2026-04-08",
             "weekdaysApply": [1, 2, 3, 4, 5],
@@ -31,7 +32,8 @@
       "restrictions": [
         {
           "vehicleType": "particular",
-           "scheduleType": "rotating_weekly_daily",
+          "scheduleType": "rotating_weekly_daily",
+          "holidayBehavior": "no_restriction",
           "rotation": {
             "cycleStartDate": "2026-04-06",
             "weekdaysApply": [1, 2, 3, 4, 5],
@@ -53,6 +55,7 @@
         {
           "vehicleType": "particular",
           "scheduleType": "rotating_daily",
+          "holidayBehavior": "no_restriction",
           "rotation": {
             "cycleStartDate": "2026-01-05",
             "cycleLengthDays": 5,
@@ -81,6 +84,7 @@
         {
           "vehicleType": "particular",
           "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
           "schedule": {
             "1": [5, 6],
             "2": [7, 8],
@@ -95,6 +99,7 @@
         {
           "vehicleType": "moto",
           "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
           "schedule": {
             "1": [5, 6],
             "2": [7, 8],
@@ -109,6 +114,7 @@
         {
           "vehicleType": "taxi",
           "scheduleType": "rotating_daily_by_group",
+          "holidayBehavior": "applies_normal",
           "rotation": {
             "cycleStartDate": "2026-04-09",
             "cycleLengthDays": 5,
@@ -119,6 +125,7 @@
               [0],[1],[2],[3],[4],[5],[6],[7],[8],[9]
             ]
           },
+
           "morningStart": "00:00",
           "morningEnd":   "23:59",
           "note": "Los domingos se aplican esos dígitos"
