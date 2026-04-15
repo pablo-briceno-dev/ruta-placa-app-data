@@ -121,7 +121,7 @@
           },
           "morningStart": "00:00",
           "morningEnd":   "23:59",
-          "note": null
+          "note": "Los domingos aplica el dígito del día y el siguiente"
         }
       ]
     }
