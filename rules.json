@@ -1,6 +1,6 @@
 {
-  "version": "0.0.2",
-  "lastUpdated": "2026-04-10T09:50:00Z",
+  "version": "0.0.3",
+  "lastUpdated": "2026-04-13T10:58:00Z",
   "cities": [
     {
       "id": "bogota",
@@ -69,6 +69,58 @@
           "morningEnd":   "09:00",
           "afternoonStart": "17:00",
           "afternoonEnd":   "19:00",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "armenia",
+      "name": "Armenia, Quindío",
+      "emoji": "☕",
+      "restrictions": [
+        {
+          "vehicleType": "particular",
+          "scheduleType": "fixed_weekly",
+          "schedule": {
+            "1": [5, 6],
+            "2": [7, 8],
+            "3": [9, 0],
+            "4": [1, 2],
+            "5": [3, 4]
+          },
+          "morningStart": "07:00",
+          "morningEnd":   "19:00",
+          "note": null
+        },
+        {
+          "vehicleType": "moto",
+          "scheduleType": "fixed_weekly",
+          "schedule": {
+            "1": [5, 6],
+            "2": [7, 8],
+            "3": [9, 0],
+            "4": [1, 2],
+            "5": [3, 4]
+          },
+          "morningStart": "07:00",
+          "morningEnd":   "19:00",
+          "note": null
+        },
+        {
+          "vehicleType": "taxi",
+          "scheduleType": "rotating_daily_by_group",
+          "rotation": {
+            "cycleStartDate": "2026-04-13",
+            "cycleLengthDays": 5,
+            "weekdaysApply": [1, 2, 3, 4, 5, 6, 7],
+            "groupDays": [7],
+            "groupDigits": 1,
+            "rotationCycle": [
+              [0],[1],[2],[3],[4],[5],[6],[7],[8],[9]
+            ]
+          },
+          "morningStart": "00:00",
+          "morningEnd":   "23:59",
           "note": null
         }
       ]
