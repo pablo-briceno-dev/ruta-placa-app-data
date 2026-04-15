@@ -1,5 +1,5 @@
 {
-  "version": "0.0.3",
+  "version": "0.0.4",
   "lastUpdated": "2026-04-13T10:58:00Z",
   "cities": [
     {
@@ -110,7 +110,7 @@
           "vehicleType": "taxi",
           "scheduleType": "rotating_daily_by_group",
           "rotation": {
-            "cycleStartDate": "2026-04-13",
+            "cycleStartDate": "2026-04-09",
             "cycleLengthDays": 5,
             "weekdaysApply": [1, 2, 3, 4, 5, 6, 7],
             "groupDays": [7],
