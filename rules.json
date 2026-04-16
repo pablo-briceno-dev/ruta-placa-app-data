@@ -1,5 +1,5 @@
 {
-  "version": "0.0.6",
+  "version": "0.0.7",
   "lastUpdated": "2026-04-13T20:00:00Z",
   "cities": [
     {
@@ -20,7 +20,7 @@
             ]
           },
           "morningStart": "06:00",
-          "morningEnd": "20:00",
+          "morningEnd": "21:00",
           "note": null
         },
         {
@@ -31,7 +31,7 @@
             "cycleStartDate": "2026-03-16",
             "weekdaysApply": [1, 2, 3, 4, 5, 6],
             "rotationCycle": [
-              [0, 1], [2, 3], [4, 5], [6, 7], [8, 9]
+              [3, 4],[5, 6], [7, 8], [9, 0], [1, 2]
             ]
           },
           "morningStart": "05:30",
@@ -253,7 +253,268 @@
           },
           "morningStart": "06:00",
           "morningEnd":   "20:00",
-          "note": "Los domingos se aplican esos dígitos"
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "bucaramanga",
+      "name": "Bucaramanga, Santander",
+      "emoji": "☕",
+      "restrictions": [
+        {
+          "vehicleType": "particular",
+          "scheduleType": "fixed_weekly_with_rotating_saturday",
+          "holidayBehavior": "no_restriction",
+          "schedule": {
+            "1": [9, 0],
+            "2": [1, 2],
+            "3": [3, 4],
+            "4": [5, 6],
+            "5": [7, 8]
+          },
+          "rotation": {
+            "cycleStartDate": "2026-04-13",
+            "weekdaysApply": [6],
+            "rotationCycle": [
+              [9, 0],
+              [1, 2],
+              [3, 4],
+              [5, 6],
+              [7, 8]
+            ]
+          },
+          "morningStart": "06:00",
+          "morningEnd":   "20:00",
+          "note": null
+        },
+        {
+          "vehicleType": "moto",
+          "scheduleType": "fixed_weekly_with_rotating_saturday",
+          "holidayBehavior": "no_restriction",
+          "schedule": {
+            "1": [9, 0],
+            "2": [1, 2],
+            "3": [3, 4],
+            "4": [5, 6],
+            "5": [7, 8]
+          },
+          "rotation": {
+            "cycleStartDate": "2026-04-13",
+            "weekdaysApply": [6],
+            "rotationCycle": [
+              [9, 0],
+              [1, 2],
+              [3, 4],
+              [5, 6],
+              [7, 8]
+            ]
+          },
+          "morningStart": "06:00",
+          "morningEnd":   "20:00",
+          "note": null
+        },
+        {
+          "vehicleType": "taxi",
+          "scheduleType": "rotating_weekly_daily",
+          "holidayBehavior": "no_restriction",
+          "rotation": {
+            "cycleStartDate": "2026-03-16",
+            "weekdaysApply": [1, 2, 3, 4, 5],
+            "rotationCycle": [
+              [3, 4], [5, 6], [7, 8], [9, 0], [1, 2]
+            ]
+          },
+          "morningStart": "07:00",
+          "morningEnd": "19:00",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "buenaventura",
+      "name": "Buenaventura, Valle del Cauca",
+      "emoji": "☕",
+      "restrictions": [
+        {
+          "vehicleType": "particular",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "schedule": {
+            "1": [1, 7],
+            "2": [0, 3],
+            "3": [4, 6],
+            "4": [5, 9],
+            "5": [2, 8]
+          },
+          "morningStart": "07:00",
+          "morningEnd":   "19:00",
+          "note": null
+        },
+        {
+          "vehicleType": "taxi",
+          "scheduleType": "rotating_daily",
+          "holidayBehavior": "applies_normal",
+          "rotation": {
+            "cycleStartDate": "2026-03-16",
+            "weekdaysApply": [1, 2, 3, 4, 5],
+            "rotationCycle": [
+              [1,2],[3,4],[5,6],[7,8],[9,0]
+            ]
+          },
+          "morningStart": "07:00",
+          "morningEnd": "19:00",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "caldas",
+      "name": "Caldas, Antioquia",
+      "emoji": "☕",
+      "restrictions": [
+        {
+          "vehicleType": "moto",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "schedule": {
+            "1": [1, 7],
+            "2": [0, 3],
+            "3": [4, 6],
+            "4": [5, 9],
+            "5": [2, 8]
+          },
+          "morningStart": "05:00",
+          "morningEnd":   "20:00",
+          "note": null
+        },
+        {
+          "vehicleType": "particular",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "schedule": {
+            "1": [1, 7],
+            "2": [0, 3],
+            "3": [4, 6],
+            "4": [5, 9],
+            "5": [2, 8]
+          },
+          "morningStart": "05:00",
+          "morningEnd":   "20:00",
+          "note": null
+        },
+        {
+          "vehicleType": "taxi",
+          "scheduleType": "rotating_daily",
+          "holidayBehavior": "no_restriction",
+          "rotation": {
+            "cycleStartDate": "2026-04-06",
+            "weekdaysApply": [1, 2, 3, 4, 5],
+            "rotationCycle": [
+              [1],[7],[3],[9],[0],[6],[2],[8],[4],[5]
+            ]
+          },
+          "morningStart": "06:00",
+          "morningEnd": "20:00",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "cali",
+      "name": "Cali",
+      "emoji": "☕",
+      "restrictions": [
+        {
+          "vehicleType": "particular",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "schedule": {
+            "1": [1, 2],
+            "2": [3, 4],
+            "3": [5, 6],
+            "4": [7, 8],
+            "5": [9, 0]
+          },
+          "morningStart": "06:00",
+          "morningEnd":   "19:00",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "cartagena",
+      "name": "Cartagena, Bolívar",
+      "emoji": "☕",
+      "restrictions": [
+        {
+          "vehicleType": "moto",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "schedule": {
+            "1": [7, 8],
+            "2": [9, 0],
+            "3": [1, 2],
+            "4": [3, 4],
+            "5": [5, 6]
+          },
+          "morningStart": "05:00",
+          "morningEnd":   "23:00",
+          "note": null
+        },
+        {
+          "vehicleType": "particular",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "schedule": {
+            "1": [7, 8],
+            "2": [9, 0],
+            "3": [1, 2],
+            "4": [3, 4],
+            "5": [5, 6]
+          },
+          "morningStart": "07:00",
+          "morningEnd":   "09:00",
+          "afternoonStart": "18:00",
+          "afternoonEnd":   "20:00",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "copacabana",
+      "name": "Copacabana, Antioquia",
+      "emoji": "☕",
+      "restrictions": [
+        {
+          "vehicleType": "moto",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "schedule": {
+            "1": [1, 7],
+            "2": [0, 3],
+            "3": [4, 6],
+            "4": [5, 9],
+            "5": [2, 8]
+          },
+          "morningStart": "05:00",
+          "morningEnd":   "20:00",
+          "note": null
+        },
+        {
+          "vehicleType": "particular",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "schedule": {
+            "1": [1, 7],
+            "2": [0, 3],
+            "3": [4, 6],
+            "4": [5, 9],
+            "5": [2, 8]
+          },
+          "morningStart": "05:00",
+          "morningEnd":   "20:00",
+          "note": null
         }
       ]
     }
