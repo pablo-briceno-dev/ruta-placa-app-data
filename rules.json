@@ -1,12 +1,26 @@
 {
-  "version": "0.0.8",
-  "lastUpdated": "2026-04-16T17:00:00Z",
+  "version": "1.0.0",
+  "lastUpdated": "2026-04-17T12:10:00Z",
   "cities": [
     {
       "id": "bogota",
       "name": "Bogotá, Cundinamarca",
       "emoji": "🏙️",
       "restrictions": [
+        {
+          "vehicleType": "moto",
+          "status": "unavailable",
+          "scheduleType": "alternating_daily_monday_repeats_sunday",
+          "holidayBehavior": "counts_but_no_restriction",
+          "rotation": {
+            "cycleStartDate": "2026-04-13",
+            "weekdaysApply":  [1, 2, 3, 4, 5, 6, 7],
+            "rotationCycle":  [[1,3,5,7,9],[0,2,4,6,8]]
+          },
+          "morningStart": "00:00",
+          "morningEnd":   "23:59",
+          "note": null
+        },
         {
           "vehicleType": "particular",
           "scheduleType": "rotating_alternating",
@@ -98,6 +112,20 @@
       "emoji": "☕",
       "restrictions": [
         {
+          "vehicleType": "particular",
+          "status": "unavailable",
+          "scheduleType": "alternating_daily_monday_repeats_sunday",
+          "holidayBehavior": "counts_but_no_restriction",
+          "rotation": {
+            "cycleStartDate": "2026-04-13",
+            "weekdaysApply":  [1, 2, 3, 4, 5, 6, 7],
+            "rotationCycle":  [[1,3,5,7,9],[0,2,4,6,8]]
+          },
+          "morningStart": "00:00",
+          "morningEnd":   "23:59",
+          "note": null
+        },
+        {
           "vehicleType": "taxi",
           "scheduleType": "rotating_weekly_daily_with_weekend",
           "holidayBehavior": "no_restriction",
@@ -108,7 +136,7 @@
               [3, 4], [5, 6], [7,8], [9, 0], [1, 2]
             ]
           },
-          "morningStart": "07:00",
+          "morningStart": "00:00",
           "morningEnd":   "23:59",
           "note": "Fines de semana: sábado primer dígito, domingo segundo dígito del lunes siguiente"
         }
@@ -211,6 +239,20 @@
       "name": "Barranquilla, Atlántico",
       "emoji": "☕",
       "restrictions": [
+        {
+          "vehicleType": "particular",
+          "status": "unavailable",
+          "scheduleType": "alternating_daily_monday_repeats_sunday",
+          "holidayBehavior": "counts_but_no_restriction",
+          "rotation": {
+            "cycleStartDate": "2026-04-13",
+            "weekdaysApply":  [1, 2, 3, 4, 5, 6, 7],
+            "rotationCycle":  [[1,3,5,7,9],[0,2,4,6,8]]
+          },
+          "morningStart": "00:00",
+          "morningEnd":   "23:59",
+          "note": null
+        },
         {
           "vehicleType": "taxi",
           "scheduleType": "rotating_weekly_daily",
@@ -349,7 +391,7 @@
             ]
           },
           "morningStart": "07:00",
-          "morningEnd": "19:00",
+          "morningEnd": "21:00",
           "note": null
         }
       ]
@@ -462,6 +504,20 @@
           "morningStart": "06:00",
           "morningEnd":   "19:00",
           "note": null
+        },
+        {
+          "vehicleType": "taxi",
+          "status": "unavailable",
+          "scheduleType": "alternating_daily_monday_repeats_sunday",
+          "holidayBehavior": "counts_but_no_restriction",
+          "rotation": {
+            "cycleStartDate": "2026-04-13",
+            "weekdaysApply":  [1, 2, 3, 4, 5, 6, 7],
+            "rotationCycle":  [[1,3,5,7,9],[0,2,4,6,8]]
+          },
+          "morningStart": "00:00",
+          "morningEnd":   "23:59",
+          "note": null
         }
       ]
     },
@@ -500,6 +556,20 @@
           "morningEnd":   "09:00",
           "afternoonStart": "18:00",
           "afternoonEnd":   "20:00",
+          "note": null
+        },
+        {
+          "vehicleType": "taxi",
+          "status": "unavailable",
+          "scheduleType": "alternating_daily_monday_repeats_sunday",
+          "holidayBehavior": "counts_but_no_restriction",
+          "rotation": {
+            "cycleStartDate": "2026-04-13",
+            "weekdaysApply":  [1, 2, 3, 4, 5, 6, 7],
+            "rotationCycle":  [[1,3,5,7,9],[0,2,4,6,8]]
+          },
+          "morningStart": "00:00",
+          "morningEnd":   "23:59",
           "note": null
         }
       ]
@@ -696,8 +766,29 @@
               [1],[7],[3],[9],[0],[6],[2],[8],[4],[5]
             ]
           },
-          "morningStart": "07:00",
+          "morningStart": "06:00",
           "morningEnd": "20:00",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "fusagasuga",
+      "name": "Fusagasugá, Cundinamarca",
+      "emoji": "☕",
+      "restrictions": [
+        {
+          "vehicleType": "particular",
+          "status": "unavailable",
+          "scheduleType": "alternating_daily_monday_repeats_sunday",
+          "holidayBehavior": "counts_but_no_restriction",
+          "rotation": {
+            "cycleStartDate": "2026-04-13",
+            "weekdaysApply":  [1, 2, 3, 4, 5, 6, 7],
+            "rotationCycle":  [[1,3,5,7,9],[0,2,4,6,8]]
+          },
+          "morningStart": "00:00",
+          "morningEnd":   "23:59",
           "note": null
         }
       ]
@@ -740,10 +831,45 @@
       ]
     },
     {
+      "id": "girardat",
+      "name": "Girardot, Cundinamarca",
+      "emoji": "☕",
+      "restrictions": [
+        {
+          "vehicleType": "particular",
+          "status": "unavailable",
+          "scheduleType": "alternating_daily_monday_repeats_sunday",
+          "holidayBehavior": "counts_but_no_restriction",
+          "rotation": {
+            "cycleStartDate": "2026-04-13",
+            "weekdaysApply":  [1, 2, 3, 4, 5, 6, 7],
+            "rotationCycle":  [[1,3,5,7,9],[0,2,4,6,8]]
+          },
+          "morningStart": "00:00",
+          "morningEnd":   "23:59",
+          "note": null
+        }
+      ]
+    },
+    {
       "id": "ibague",
       "name": "Ibagué, Tolima",
       "emoji": "☕",
       "restrictions": [
+        {
+          "vehicleType": "moto",
+          "status": "unavailable",
+          "scheduleType": "alternating_daily_monday_repeats_sunday",
+          "holidayBehavior": "counts_but_no_restriction",
+          "rotation": {
+            "cycleStartDate": "2026-04-13",
+            "weekdaysApply":  [1, 2, 3, 4, 5, 6, 7],
+            "rotationCycle":  [[1,3,5,7,9],[0,2,4,6,8]]
+          },
+          "morningStart": "00:00",
+          "morningEnd":   "23:59",
+          "note": null
+        },
         {
           "vehicleType": "particular",
           "scheduleType": "fixed_weekly",
@@ -782,6 +908,41 @@
           },
           "morningStart": "06:00",
           "morningEnd": "20:00",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "ipiales",
+      "name": "Ipiales, Nariño",
+      "emoji": "☕",
+      "restrictions":[
+        {
+          "vehicleType": "moto",
+          "status": "unavailable",
+          "scheduleType": "alternating_daily_monday_repeats_sunday",
+          "holidayBehavior": "counts_but_no_restriction",
+          "rotation": {
+            "cycleStartDate": "2026-04-13",
+            "weekdaysApply":  [1, 2, 3, 4, 5, 6, 7],
+            "rotationCycle":  [[1,3,5,7,9],[0,2,4,6,8]]
+          },
+          "morningStart": "00:00",
+          "morningEnd":   "23:59",
+          "note": null
+        },
+        {
+          "vehicleType": "particular",
+          "status": "unavailable",
+          "scheduleType": "alternating_daily_monday_repeats_sunday",
+          "holidayBehavior": "counts_but_no_restriction",
+          "rotation": {
+            "cycleStartDate": "2026-04-13",
+            "weekdaysApply":  [1, 2, 3, 4, 5, 6, 7],
+            "rotationCycle":  [[1,3,5,7,9],[0,2,4,6,8]]
+          },
+          "morningStart": "00:00",
+          "morningEnd":   "23:59",
           "note": null
         }
       ]
@@ -946,6 +1107,27 @@
           },
           "morningStart": "06:00",
           "morningEnd":   "20:00",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id":"monteria",
+      "name": "Montería, Córdoba",
+      "emoji": "☕",
+      "restrictions": [
+        {
+          "vehicleType": "particular",
+          "status": "unavailable",
+          "scheduleType": "alternating_daily_monday_repeats_sunday",
+          "holidayBehavior": "counts_but_no_restriction",
+          "rotation": {
+            "cycleStartDate": "2026-04-13",
+            "weekdaysApply":  [1, 2, 3, 4, 5, 6, 7],
+            "rotationCycle":  [[1,3,5,7,9],[0,2,4,6,8]]
+          },
+          "morningStart": "00:00",
+          "morningEnd":   "23:59",
           "note": null
         }
       ]
@@ -1478,7 +1660,7 @@
             ]
           },
           "morningStart": "06:00",
-          "morningEnd": "20:00",
+          "morningEnd": "00:00",
           "note": null
         }
       ]
