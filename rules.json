@@ -4,7 +4,7 @@
   "cities": [
     {
       "id": "bogota",
-      "name": "Bogotá",
+      "name": "Bogotá, Cundinamarca",
       "emoji": "🏙️",
       "restrictions": [
         {
@@ -42,11 +42,41 @@
     },
     {
       "id": "pasto",
-      "name": "Pasto",
+      "name": "Pasto, Nariño",
       "emoji": "🌋",
       "restrictions": [
         {
+          "vehicleType": "moto",
+          "scheduleType": "rotating_weekly_daily",
+          "holidayBehavior": "no_restriction",
+          "rotation": {
+            "cycleStartDate": "2026-04-06",
+            "weekdaysApply": [1, 2, 3, 4, 5],
+            "rotationCycle": [
+              [0, 1], [2, 3], [4, 5], [6, 7], [8, 9]
+            ]
+          },
+          "morningStart": "07:30",
+          "morningEnd": "19:00",
+          "note": null
+        },
+        {
           "vehicleType": "particular",
+          "scheduleType": "rotating_weekly_daily",
+          "holidayBehavior": "no_restriction",
+          "rotation": {
+            "cycleStartDate": "2026-04-06",
+            "weekdaysApply": [1, 2, 3, 4, 5],
+            "rotationCycle": [
+              [0, 1], [2, 3], [4, 5], [6, 7], [8, 9]
+            ]
+          },
+          "morningStart": "07:30",
+          "morningEnd": "19:00",
+          "note": null
+        },
+        {
+          "vehicleType": "taxi",
           "scheduleType": "rotating_weekly_daily",
           "holidayBehavior": "no_restriction",
           "rotation": {
@@ -916,6 +946,539 @@
           },
           "morningStart": "06:00",
           "morningEnd":   "20:00",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "murillo",
+      "name": "Murillo, Tolima",
+      "emoji": "☕",
+      "restrictions":[
+        {
+          "vehicleType": "moto",
+          "scheduleType": "iso_week_weekend_with_holiday_bridge",
+          "holidayBehavior": "handled_by_schedule_type",
+          "rotation": {
+            "cycleStartDate":   "2026-04-06",
+            "bridgeStartDigit": 6,
+            "weekdaysApply":    [6, 7]
+          },
+          "morningStart": "07:00",
+          "morningEnd":   "15:00",
+          "note": "Fines de semana: ISO par=pares, impar=impares. Puentes: ciclo de 3 dígitos."
+        },
+        {
+          "vehicleType": "particular",
+          "scheduleType": "iso_week_weekend_with_holiday_bridge",
+          "holidayBehavior": "handled_by_schedule_type",
+          "rotation": {
+            "cycleStartDate":   "2026-04-06",
+            "bridgeStartDigit": 6,
+            "weekdaysApply":    [6, 7]
+          },
+          "morningStart": "07:00",
+          "morningEnd":   "15:00",
+          "note": "Fines de semana: ISO par=pares, impar=impares. Puentes: ciclo de 3 dígitos."
+        }
+      ]
+    },
+    {
+      "id": "ocaña",
+      "name": "Ocaña, Norte de Santander",
+      "emoji": "☕",
+      "restrictions": [
+        {
+          "vehicleType": "moto",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "schedule": {
+            "3": [0,1,2,3,4,5,6,7,8,9]
+          },
+          "morningStart": "08:00",
+          "morningEnd":   "11:30",
+          "afternoonStart": "14:00",
+          "afternoonEnd":   "17:30",
+          "note": null
+        },
+        {
+          "vehicleType": "particular",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "schedule": {
+            "1": [1, 2],
+            "2": [3, 4],
+            "3": [5, 6],
+            "4": [7, 8],
+            "5": [9, 0]
+          },
+          "timeRangesByOrigin": {
+            "metropolitan": [
+              {"start": "07:00", "end": "08:30"},
+              {"start": "11:30", "end": "14:30"},
+              {"start": "17:30", "end": "19:00"}
+            ],
+            "nationalOrForeign": [
+              {"start": "07:00", "end": "19:00"}
+            ]
+          },
+          "morningStart": "07:00",
+          "morningEnd":   "19:00",
+          "note": "Horario diferente según origen de placa"
+        }
+      ]
+    },
+    {
+      "id": "pamplona",
+      "name": "Pamplona, Norte de Santander",
+      "emoji": "☕",
+      "restrictions": [
+        {
+          "vehicleType": "moto",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "schedule": {
+            "1": [1, 2],
+            "2": [3, 4],
+            "3": [5, 6],
+            "4": [7, 8],
+            "5": [9, 0]
+          },
+          "morningStart": "08:00",
+          "morningEnd":   "18:00",
+          "note": null
+        },
+        {
+          "vehicleType": "particular",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "schedule": {
+            "1": [1, 2],
+            "2": [3, 4],
+            "3": [5, 6],
+            "4": [7, 8],
+            "5": [9, 0]
+          },
+          "morningStart": "08:00",
+          "morningEnd":   "18:00",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "pereira",
+      "name": "Pereira, Risaralda",
+      "emoji": "🌋",
+      "restrictions": [
+        {
+          "vehicleType": "moto",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "schedule": {
+            "1": [1, 2],
+            "2": [3, 4],
+            "3": [5, 6],
+            "4": [7, 8],
+            "5": [9, 0]
+          },
+          "morningStart": "06:00",
+          "morningEnd":   "20:00",
+          "note": null
+        },
+        {
+          "vehicleType": "particular",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "schedule": {
+            "1": [1, 2],
+            "2": [3, 4],
+            "3": [5, 6],
+            "4": [7, 8],
+            "5": [9, 0]
+          },
+          "morningStart": "06:00",
+          "morningEnd":   "20:00",
+          "note": null
+        },
+        {
+          "vehicleType": "taxi",
+          "status": "coming_soon",
+          "scheduleType": "rotating_daily",
+          "note": "Información en proceso de verificación con el Instituto de Movilidad de Pereira",
+          "morningStart": "07:00",
+          "morningEnd":   "03:00"
+        }
+      ]
+    },
+    {
+      "id": "popayan",
+      "name": "Popayán, Cauca",
+      "emoji": "🌋",
+      "restrictions": [
+        {
+          "vehicleType": "moto",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "schedule": {
+            "1": [1, 2],
+            "2": [3, 4],
+            "3": [5, 6],
+            "4": [7, 8],
+            "5": [9, 0]
+          },
+          "morningStart": "07:00",
+          "morningEnd":   "20:00",
+          "note": null
+        },
+        {
+          "vehicleType": "particular",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "schedule": {
+            "1": [1, 2],
+            "2": [3, 4],
+            "3": [5, 6],
+            "4": [7, 8],
+            "5": [9, 0]
+          },
+          "morningStart": "07:00",
+          "morningEnd":   "20:00",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "quibdo",
+      "name": "Quibdó, Chocó",
+      "emoji": "🌋",
+      "restrictions": [
+        {
+          "vehicleType": "moto",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "schedule": {
+            "1": [0,1,4,7],
+            "2": [2,3,6,5],
+            "3": [1,7,8,9],
+            "4": [0,6,2,3],
+            "5": [5,4,8,9]
+          },
+          "morningStart": "07:00",
+          "morningEnd":   "19:00",
+          "note": null
+        },
+        {
+          "vehicleType": "particular",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "schedule": {
+            "1": [1, 2],
+            "2": [5, 6],
+            "3": [9, 0],
+            "4": [7, 8],
+            "5": [3, 4]
+          },
+          "morningStart": "07:00",
+          "morningEnd":   "20:00",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "sabaneta",
+      "name": "Sabaneta, Antioquia",
+      "emoji": "🌋",
+      "restrictions": [
+        {
+          "vehicleType": "moto",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "schedule": {
+            "1": [1,7],
+            "2": [0,3],
+            "3": [4,6],
+            "4": [5,9],
+            "5": [2,8]
+          },
+          "morningStart": "05:00",
+          "morningEnd":   "20:00",
+          "note": null
+        },
+        {
+          "vehicleType": "particular",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "schedule": {
+            "1": [1,7],
+            "2": [0,3],
+            "3": [4,6],
+            "4": [5,9],
+            "5": [2,8]
+          },
+          "morningStart": "05:00",
+          "morningEnd":   "20:00",
+          "note": null
+        },
+        {
+          "vehicleType": "taxi",
+          "scheduleType": "rotating_daily",
+          "holidayBehavior": "no_restriction",
+          "rotation": {
+            "cycleStartDate": "2026-04-06",
+            "weekdaysApply": [1, 2, 3, 4, 5],
+            "rotationCycle": [
+              [1],[7],[3],[9],[0],[6],[2],[8],[4],[5]
+            ]
+          },
+          "morningStart": "06:00",
+          "morningEnd": "20:00",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "santa cruz de lorica",
+      "name": "Cruz de Lorica, Córdoba",
+      "emoji": "🌋",
+      "restrictions": [
+        {
+          "vehicleType": "moto",
+          "status": "unavailable",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "morningStart": "08:00",
+          "morningEnd":   "17:00",
+          "note": null
+        },
+        {
+          "vehicleType": "particular",
+          "status": "unavailable",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "morningStart": "08:00",
+          "morningEnd":   "17:00",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "santa marta",
+      "name": "Santa Marta, Magdalena",
+      "emoji": "🌋",
+      "restrictions": [
+        {
+          "vehicleType": "moto",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "schedule": {
+            "1": [1,2],
+            "2": [3,4],
+            "3": [5,6],
+            "4": [7,8],
+            "5": [9,0]
+          },
+          "morningStart": "07:00",
+          "morningEnd":   "19:00",
+          "note": null
+        },
+        {
+          "vehicleType": "particular",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "schedule": {
+            "1": [1,2],
+            "2": [3,4],
+            "3": [5,6],
+            "4": [7,8],
+            "5": [9,0]
+          },
+          "timeRangesByOrigin": {
+            "metropolitan": [
+              {"start": "07:00", "end": "09:00"},
+              {"start": "11:30", "end": "14:00"},
+              {"start": "17:00", "end": "20:00"}
+            ],
+            "nationalOrForeign": [
+              {"start": "07:00", "end": "09:00"},
+              {"start": "11:30", "end": "14:00"},
+              {"start": "17:00", "end": "20:00"}
+            ]
+          },
+          "morningStart": "07:00",
+          "morningEnd":   "20:00",
+          "note": null
+        },
+        {
+          "vehicleType": "taxi",
+          "scheduleType": "rotating_ltj_with_weekend_split",
+          "holidayBehavior": "no_restriction",
+          "rotation": {
+            "cycleStartDate": "2026-04-20",
+            "weekdaysApply":  [1, 2, 3, 4, 5, 6],
+            "rotationCycle":  [
+              [3, 4],[5, 6],[7, 8],[9, 0],[1, 2]
+            ]
+          },
+          "morningStart": "07:00",
+          "morningEnd": "23:59",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "sincelejo",
+      "name": "Sincelejo, Sucre",
+      "emoji": "🌋",
+      "restrictions": [
+        {
+          "vehicleType": "particular",
+          "status": "unavailable",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "morningStart": "08:00",
+          "morningEnd":   "17:00",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "soacha",
+      "name": "Soacha, Cundinamarca",
+      "emoji": "🌋",
+      "restrictions": [
+        {
+          "vehicleType": "particular",
+          "status": "unavailable",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "morningStart": "08:00",
+          "morningEnd":   "17:00",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "soledad",
+      "name": "Soledad, Atlántico",
+      "emoji": "🌋",
+      "restrictions": [
+        {
+          "vehicleType": "moto",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "applies_normal",
+          "schedule": {
+            "1": [1,3],
+            "2": [2,4],
+            "3": [5,7],
+            "4": [6,8],
+            "5": [9,0]
+          },
+          "morningStart": "05:00",
+          "morningEnd":   "22:00",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "tunja",
+      "name": "Tunja, Boyacá",
+      "emoji": "🌋",
+      "restrictions": [
+        {
+          "vehicleType": "particular",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "schedule": {
+            "1": [3,4],
+            "2": [5,6],
+            "3": [7,8],
+            "4": [9,0],
+            "5": [1,2]
+          },
+          "morningStart": "06:00",
+          "morningEnd":   "20:00",
+          "note": null
+        },
+        {
+          "vehicleType": "taxi",
+          "status": "unavailable",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "morningStart": "06:00",
+          "morningEnd":   "20:00",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "turbaco",
+      "name": "Turbaco, Bolivar",
+      "emoji": "🌋",
+      "restrictions": [
+        {
+          "vehicleType": "moto",
+          "scheduleType": "alternating_daily_monday_repeats_sunday",
+          "holidayBehavior": "counts_but_no_restriction",
+          "rotation": {
+            "cycleStartDate": "2026-04-13",
+            "weekdaysApply":  [1, 2, 3, 4, 5, 6, 7],
+            "rotationCycle":  [[1,3,5,7,9],[0,2,4,6,8]]
+          },
+          "morningStart": "00:00",
+          "morningEnd":   "23:59",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "villavicencio",
+      "name": "Villavicencio, Meta",
+      "emoji": "🌋",
+      "restrictions": [
+        {
+          "vehicleType": "moto",
+          "status": "unavailable",
+          "scheduleType": "alternating_daily_monday_repeats_sunday",
+          "holidayBehavior": "counts_but_no_restriction",
+          "rotation": {
+            "cycleStartDate": "2026-04-13",
+            "weekdaysApply":  [1, 2, 3, 4, 5, 6, 7],
+            "rotationCycle":  [[1,3,5,7,9],[0,2,4,6,8]]
+          },
+          "morningStart": "00:00",
+          "morningEnd":   "23:59",
+          "note": null
+        },
+        {
+          "vehicleType": "particular",
+          "scheduleType": "fixed_weekly",
+          "holidayBehavior": "no_restriction",
+          "schedule": {
+            "1": [5,6],
+            "2": [7,8],
+            "3": [9,0],
+            "4": [1,2],
+            "5": [3,4]
+          },
+          "morningStart": "06:30",
+          "morningEnd":   "09:30",
+          "afternoonStart": "17:00",
+          "afternoonEnd":   "20:00",
+          "note": null
+        },
+        {
+          "vehicleType": "taxi",
+          "scheduleType": "rotating_daily",
+          "holidayBehavior": "applies_normal",
+          "rotation": {
+            "cycleStartDate": "2026-02-09",
+            "weekdaysApply": [1, 2, 3, 4, 5, 6, 7],
+            "rotationCycle": [
+              [5],[6],[7],[8],[9],[0],[1],[2],[3],[4]
+            ]
+          },
+          "morningStart": "06:00",
+          "morningEnd": "20:00",
           "note": null
         }
       ]
