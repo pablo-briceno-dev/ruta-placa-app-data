@@ -1,5 +1,5 @@
 {
-  "version": "1.0.5",
+  "version": "1.0.6",
   "lastUpdated": "2026-07-15T11:00:00Z",
   "cities": [
     {
@@ -1587,9 +1587,9 @@
           "scheduleType": "alternating_daily_monday_repeats_sunday",
           "holidayBehavior": "counts_but_no_restriction",
           "rotation": {
-            "cycleStartDate": "2026-07-13",
+            "cycleStartDate": "2026-07-14",
             "weekdaysApply":  [1, 2, 3, 4, 5, 6, 7],
-            "rotationCycle":  [[1,3,5,7,9],[0,2,4,6,8]]
+            "rotationCycle":  [[0,2,4,6,8],[1,3,5,7,9]]
           },
           "morningStart": "00:00",
           "morningEnd":   "23:59",
