@@ -1,6 +1,6 @@
 {
-  "version": "1.0.2",
-  "lastUpdated": "2026-07-14T13:04:00Z",
+  "version": "1.0.3",
+  "lastUpdated": "2026-07-15T10:32:00Z",
   "cities": [
     {
       "id": "bogota",
@@ -1587,7 +1587,7 @@
           "scheduleType": "alternating_daily_monday_repeats_sunday",
           "holidayBehavior": "counts_but_no_restriction",
           "rotation": {
-            "cycleStartDate": "2026-04-13",
+            "cycleStartDate": "2026-07-13",
             "weekdaysApply":  [1, 2, 3, 4, 5, 6, 7],
             "rotationCycle":  [[1,3,5,7,9],[0,2,4,6,8]]
           },
